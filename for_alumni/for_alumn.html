@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<!DOCTYPE HTML>
+<!--
+	Binary by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Alumni Login | CSO Alumni Association</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <script type="text/javascript">
+            // PASSWORD PROTECTION SCRIPT
+
+            function TheLogin() {
+
+            var password = 'csoalumni';
+
+            if (this.document.login.pass.value == password) {
+              top.location.href="webpage.html";
+            }
+            else {
+              window.alert("Incorrect password, please try again.");
+              }
+            }
+
+        </script>
+
+	</head>
+	<body>
+        			<!-- Header -->
+			<header id="header">
+				<a href="../index.html" class="logo"><strong>Chief Science Officer</strong> Alumni Association</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+					<li><a href="../mentoring.html">Mentoring</a></li>
+					<li><a href="../networking.html">Networking</a></li>
+                    <li><a href="../collective_action.html">Collective Action</a></li>
+                    <li><a href="for_alumn.html">For Alumni</a></li>
+				</ul>
+			</nav>
+		<!-- Main -->
+			<section id="main">
+				<div class="inner">
+				
+					<header>
+                        <h1>Alumni Home</h1>
+					</header>
+                    <h4>For alumni use only, please enter password</h4>
+                    
+                    <form name="login" style="margin: 5px 0px 0px 0px;">
+                    <input type="password" name="pass" size="17" onkeydown="if(event.keyCode==13) event.keyCode=9;" style="width: 175px;"><br>
+                    <input type="button" value="Click to Login" style="margin: 4px auto 4px auto;" onclick="javascript:TheLogin(this.form)">
+                    </form>
+
+					<p></p>
+				</div>
+			</section>
+			<footer id="footer">
+			
+			</footer>
+			
+
+			<footer id="footer">
+			
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
