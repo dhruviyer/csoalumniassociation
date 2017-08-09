@@ -46,11 +46,28 @@
 					<br>
 					<h3>Request an Alumni consultant</h3>
 					<p>Having trouble fulfilling your action plan? We've been there too! Fill out the form below to request a consulting session with a CSO Alumni, who will help you develop strategies for reaching your CSO goals.</p>
-					<form>
-					CSO Email:<br>
-				  	<input type="text" name="email"><br>
-				  	Grade:<br>
-				  	<input type="text" name="grade">
+					<form action="mailto:iyer.dhruv99@gmail.com" method="post" enctype="text/plain">
+					 CSO Cabinet:
+					  <select name="cabinets">
+					    <option value="arizona">Arizona</option>
+					    <option value="iowa">Iowa</option>
+					    <option value="illinois">Illinois</option>
+					    <option value="indiana">Indiana</option>
+					    <option value="michigan">Michigan</option>
+					    <option value="missouri">Missouri</option>
+					    <option value="new york">New York</option>
+					    <option value="oregon">Oregon</option>			   
+					    <option value="tennesse">Tennesse</option>
+					  </select>
+					School:<br>
+					<input type="text" name="name"><br>
+					CSO E-mail:<br>
+					<input type="email" name="mail"><br>
+					How can we help you?:<br>
+					<textarea name="message" rows="10" cols="30">
+					</textarea><br><br>
+					<input type="submit" value="Send">
+					<input type="reset" value="Reset">
 					</form>
 				</div>
 			</section>
