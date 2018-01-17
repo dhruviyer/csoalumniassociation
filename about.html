@@ -11,6 +11,46 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        </style>
 	</head>
 	<body>
 		<!-- Header -->
@@ -63,28 +103,74 @@
                     <table style="width:100%">
                         <tr><h2>Current CSO Alumni Association Board</h2></tr>
                         <tr>
+                          
                             <td><b>Dhruv Iyer</b></td>
                             <td><i>Expansion and External Affairs Chair</i></td>
+                            <td><a href="mailto:diyer99@seas.upenn.edu?Subject=[CSOAlumniAssociation]" target="_top">Contact</a></td>
                         </tr>
                         <tr>
                             <td><b>Megan Nielsen</b></td>
                             <td><i>Mentoring Co-chair</i></td>
+                            <td><a href="mailto:mmnielsen971@gmail.com?Subject=[CSOAlumniAssociation]" target="_top">Contact</a></td>
                         </tr>
                         <tr>
                             <td><b>Calvin Rowell</b></td>
                             <td><i>Mentoring Co-chair</i></td>
+                            <td><a href="mailto:phaseripe@gmail.com?Subject=[CSOAlumniAssociation]" target="_top">Contact</a></td>
                         </tr>
                         <tr>
                             <td><b>Dominique Browning</b></td>
                             <td><i>Networking Chair</i></td>
+                            <td><a href="mailto:domo.browning@gmail.com?Subject=[CSOAlumniAssociation]" target="_top">Contact</a></td>
                         </tr>
                         <tr>
-                            <td><b>Sage Foreman</b></td>
+                            <td><b>Sage Foreman<a id="myBtn">*</a></b></td>
                             <td><i>Collective Action Chair</i></td>
+                            <td><a href="mailto:sage.foreman@gmail.com?Subject=[CSOAlumniAssociation]" target="_top">Contact</a></td>
                         </tr>   
                     </table>
 				</div>
 			</section>
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn">Open Modal</button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Sage Foreman both an appointed member of the alumni board and a current CSO. He serves as a liason between the alumni association and the current CSO class.</p>
+              </div>
+        </div>
+        <script>
+                // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+
 
 		<!-- Footer -->
 			<footer id="footer">
